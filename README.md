@@ -58,3 +58,13 @@ latitude and longitude of major Indian cities.
 This project demonstrates how Python can be used
 for geographical data analysis and visualization.
 
+## Project Outputs
+
+All generated files are available in the output folder.
+
+- Population Distribution Chart
+- Geographical Distribution Chart
+- Interactive India Geospatial Map
+
+## Project Status
+Completed successfully.

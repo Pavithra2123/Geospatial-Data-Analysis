@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9972e9b8441dad340d0b0bf2759d60fa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9972e9b8441dad340d0b0bf2759d60fa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9972e9b8441dad340d0b0bf2759d60fa = L.map(
+                "map_9972e9b8441dad340d0b0bf2759d60fa",
+                {
+                    center: [22.5, 80.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a29f1c384c749bbdb6667a5a7c9bd39f = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri \u0026mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a29f1c384c749bbdb6667a5a7c9bd39f.addTo(map_9972e9b8441dad340d0b0bf2759d60fa);
+        
+    
+            var marker_d4d5b9785018b4301fdf72ff3ba0933e = L.marker(
+                [12.9716, 77.5946],
+                {
+}
+            ).addTo(map_9972e9b8441dad340d0b0bf2759d60fa);
+        
+    
+        var popup_f654a9244c92acbc62ea73a44367c60e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d850d2f56dec60fd57995be578623ff = $(`<div id="html_3d850d2f56dec60fd57995be578623ff" style="width: 100.0%; height: 100.0%;">Bengaluru - Population: 8500000</div>`)[0];
+                popup_f654a9244c92acbc62ea73a44367c60e.setContent(html_3d850d2f56dec60fd57995be578623ff);
+            
+        
+
+        marker_d4d5b9785018b4301fdf72ff3ba0933e.bindPopup(popup_f654a9244c92acbc62ea73a44367c60e)
+        ;
+
+        
+    
+    
+            marker_d4d5b9785018b4301fdf72ff3ba0933e.bindTooltip(
+                `<div>
+                     Bengaluru
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_088101421bbc30af86f205e149ea3a7c = L.marker(
+                [19.076, 72.8777],
+                {
+}
+            ).addTo(map_9972e9b8441dad340d0b0bf2759d60fa);
+        
+    
+        var popup_604771c52d78337e929679f3960ceb5f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b5e8f57272b3c49482b0c55e12a420c = $(`<div id="html_6b5e8f57272b3c49482b0c55e12a420c" style="width: 100.0%; height: 100.0%;">Mumbai - Population: 12400000</div>`)[0];
+                popup_604771c52d78337e929679f3960ceb5f.setContent(html_6b5e8f57272b3c49482b0c55e12a420c);
+            
+        
+
+        marker_088101421bbc30af86f205e149ea3a7c.bindPopup(popup_604771c52d78337e929679f3960ceb5f)
+        ;
+
+        
+    
+    
+            marker_088101421bbc30af86f205e149ea3a7c.bindTooltip(
+                `<div>
+                     Mumbai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f41b34c9121d39b8985582f5e9b97cf6 = L.marker(
+                [28.6139, 77.209],
+                {
+}
+            ).addTo(map_9972e9b8441dad340d0b0bf2759d60fa);
+        
+    
+        var popup_b1ffaf0fbcb2a866cdbbdeb0d045a6dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19df909d3740ac3a485bf957508fece8 = $(`<div id="html_19df909d3740ac3a485bf957508fece8" style="width: 100.0%; height: 100.0%;">Delhi - Population: 11000000</div>`)[0];
+                popup_b1ffaf0fbcb2a866cdbbdeb0d045a6dd.setContent(html_19df909d3740ac3a485bf957508fece8);
+            
+        
+
+        marker_f41b34c9121d39b8985582f5e9b97cf6.bindPopup(popup_b1ffaf0fbcb2a866cdbbdeb0d045a6dd)
+        ;
+
+        
+    
+    
+            marker_f41b34c9121d39b8985582f5e9b97cf6.bindTooltip(
+                `<div>
+                     Delhi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_35ef63ca9dcebd9588deba2e720da320 = L.marker(
+                [13.0827, 80.2707],
+                {
+}
+            ).addTo(map_9972e9b8441dad340d0b0bf2759d60fa);
+        
+    
+        var popup_e3e1143582a424fe5b2cc5a732f23e28 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_11b0bfee6fbbe405890f820abf89d797 = $(`<div id="html_11b0bfee6fbbe405890f820abf89d797" style="width: 100.0%; height: 100.0%;">Chennai - Population: 7000000</div>`)[0];
+                popup_e3e1143582a424fe5b2cc5a732f23e28.setContent(html_11b0bfee6fbbe405890f820abf89d797);
+            
+        
+
+        marker_35ef63ca9dcebd9588deba2e720da320.bindPopup(popup_e3e1143582a424fe5b2cc5a732f23e28)
+        ;
+
+        
+    
+    
+            marker_35ef63ca9dcebd9588deba2e720da320.bindTooltip(
+                `<div>
+                     Chennai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_81041e3cee33a5434ce6e70b80f5d398 = L.marker(
+                [17.385, 78.4867],
+                {
+}
+            ).addTo(map_9972e9b8441dad340d0b0bf2759d60fa);
+        
+    
+        var popup_5dfafc57ff4c12979e7fa819bb6cfc0d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c6ececebf454d1c6f2d629feb8743df = $(`<div id="html_4c6ececebf454d1c6f2d629feb8743df" style="width: 100.0%; height: 100.0%;">Hyderabad - Population: 6800000</div>`)[0];
+                popup_5dfafc57ff4c12979e7fa819bb6cfc0d.setContent(html_4c6ececebf454d1c6f2d629feb8743df);
+            
+        
+
+        marker_81041e3cee33a5434ce6e70b80f5d398.bindPopup(popup_5dfafc57ff4c12979e7fa819bb6cfc0d)
+        ;
+
+        
+    
+    
+            marker_81041e3cee33a5434ce6e70b80f5d398.bindTooltip(
+                `<div>
+                     Hyderabad
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7270a3bbe0118541ad07549102c113db = L.marker(
+                [22.5726, 88.3639],
+                {
+}
+            ).addTo(map_9972e9b8441dad340d0b0bf2759d60fa);
+        
+    
+        var popup_88769dbae306fa507a6898e9818b2b99 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4405d7b176f4901111b408e0cb552459 = $(`<div id="html_4405d7b176f4901111b408e0cb552459" style="width: 100.0%; height: 100.0%;">Kolkata - Population: 4500000</div>`)[0];
+                popup_88769dbae306fa507a6898e9818b2b99.setContent(html_4405d7b176f4901111b408e0cb552459);
+            
+        
+
+        marker_7270a3bbe0118541ad07549102c113db.bindPopup(popup_88769dbae306fa507a6898e9818b2b99)
+        ;
+
+        
+    
+    
+            marker_7270a3bbe0118541ad07549102c113db.bindTooltip(
+                `<div>
+                     Kolkata
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4d892b2fcc03b433646780a59e64f571 = L.marker(
+                [18.5204, 73.8567],
+                {
+}
+            ).addTo(map_9972e9b8441dad340d0b0bf2759d60fa);
+        
+    
+        var popup_507c9bc33caa91955ea98f8d80ab77e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6144b2d64eb138b7a2905cc706fa49ca = $(`<div id="html_6144b2d64eb138b7a2905cc706fa49ca" style="width: 100.0%; height: 100.0%;">Pune - Population: 3100000</div>`)[0];
+                popup_507c9bc33caa91955ea98f8d80ab77e0.setContent(html_6144b2d64eb138b7a2905cc706fa49ca);
+            
+        
+
+        marker_4d892b2fcc03b433646780a59e64f571.bindPopup(popup_507c9bc33caa91955ea98f8d80ab77e0)
+        ;
+
+        
+    
+    
+            marker_4d892b2fcc03b433646780a59e64f571.bindTooltip(
+                `<div>
+                     Pune
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_580e259b5a57cc5f04570941271c351e = L.marker(
+                [26.9124, 75.7873],
+                {
+}
+            ).addTo(map_9972e9b8441dad340d0b0bf2759d60fa);
+        
+    
+        var popup_73d8e902e097a38865b5a2f682735cf7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_35692aef72fc95aba127174c20fd4cb1 = $(`<div id="html_35692aef72fc95aba127174c20fd4cb1" style="width: 100.0%; height: 100.0%;">Jaipur - Population: 3000000</div>`)[0];
+                popup_73d8e902e097a38865b5a2f682735cf7.setContent(html_35692aef72fc95aba127174c20fd4cb1);
+            
+        
+
+        marker_580e259b5a57cc5f04570941271c351e.bindPopup(popup_73d8e902e097a38865b5a2f682735cf7)
+        ;
+
+        
+    
+    
+            marker_580e259b5a57cc5f04570941271c351e.bindTooltip(
+                `<div>
+                     Jaipur
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
